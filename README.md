@@ -1,3 +1,3 @@
 # Magnetometer
 
-未完成。
+尚未完成。
