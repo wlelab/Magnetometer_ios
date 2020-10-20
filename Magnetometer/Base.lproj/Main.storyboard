@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="3pA-g0-WtR">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Magnetometer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jbU-X5-8U4">
+                                <rect key="frame" x="8" y="787" width="398" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="3Ow-jG-fTd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xaI-lF-jNT" customClass="DiagramView" customModule="Magnetometer" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="90" width="414" height="225"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="xaI-lF-jNT" secondAttribute="height" multiplier="46:25" id="mtO-K1-emC"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WaO-6h-8wg" customClass="TimerLabel" customModule="Magnetometer" customModuleProvider="target">
+                                <rect key="frame" x="10" y="345" width="394" height="95"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="95" id="WiH-ZT-kQT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="64"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LTU-Ba-WO5" customClass="RoundLabel" customModule="Magnetometer" customModuleProvider="target">
+                                <rect key="frame" x="10" y="470" width="394" height="58"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="58" id="LLY-ga-v4r"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PUn-aD-5ul">
+                                <rect key="frame" x="10" y="727" width="394" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="dJK-HP-8Xh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="LTU-Ba-WO5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="ATe-rI-7T0"/>
+                            <constraint firstItem="xaI-lF-jNT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="CMV-8i-vjo"/>
+                            <constraint firstItem="xaI-lF-jNT" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="2" id="DXL-ip-lnY"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jbU-X5-8U4" secondAttribute="trailing" constant="8" id="Mw2-yx-K5C"/>
+                            <constraint firstItem="jbU-X5-8U4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="NBe-cu-at2"/>
+                            <constraint firstItem="LTU-Ba-WO5" firstAttribute="top" secondItem="WaO-6h-8wg" secondAttribute="bottom" constant="30" id="Pn7-AF-wqc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="WaO-6h-8wg" secondAttribute="trailing" constant="10" id="Rpx-hr-q15"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="LTU-Ba-WO5" secondAttribute="trailing" constant="10" id="ViR-Dn-eju"/>
+                            <constraint firstItem="WaO-6h-8wg" firstAttribute="top" secondItem="xaI-lF-jNT" secondAttribute="bottom" constant="30" id="Vt7-hu-pdh"/>
+                            <constraint firstItem="WaO-6h-8wg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="guT-4I-Iov"/>
+                            <constraint firstItem="PUn-aD-5ul" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="i0O-Q8-B9O"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="PUn-aD-5ul" secondAttribute="trailing" constant="10" id="sy8-bg-Tju"/>
+                            <constraint firstItem="xaI-lF-jNT" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="wX1-ah-pOD"/>
+                            <constraint firstItem="jbU-X5-8U4" firstAttribute="top" secondItem="PUn-aD-5ul" secondAttribute="bottom" constant="20" id="xhB-Jd-72b"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="jbU-X5-8U4" secondAttribute="bottom" constant="15" id="ze9-Vt-E7q"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="5y5-b0-1Zj"/>
+                    <connections>
+                        <outlet property="diagramView" destination="xaI-lF-jNT" id="fPl-cu-OQz"/>
+                        <outlet property="magneticValueLabel" destination="jbU-X5-8U4" id="V9z-U9-5Au"/>
+                        <outlet property="rotationSpeedLabel" destination="PUn-aD-5ul" id="qqi-Na-XX0"/>
+                        <outlet property="roundLabel" destination="LTU-Ba-WO5" id="Gzi-Ad-6Od"/>
+                        <outlet property="timerLabel" destination="WaO-6h-8wg" id="cET-dM-xDJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="833" y="116"/>
+        </scene>
+        <!--Settings Table View Controller-->
+        <scene sceneID="uEc-pq-LLJ">
+            <objects>
+                <tableViewController storyboardIdentifier="SettingsVC" id="Jlw-vl-Sus" customClass="SettingsTableViewController" customModule="Magnetometer" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="h6u-mz-oa9">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="SettingsCell" id="ijW-sU-4IX">
+                                <rect key="frame" x="0.0" y="55.5" width="414" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ijW-sU-4IX" id="c5g-QF-o54">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Jlw-vl-Sus" id="S2k-gc-JWb"/>
+                            <outlet property="delegate" destination="Jlw-vl-Sus" id="1cT-A9-RxT"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BGb-uI-6ec" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1610" y="116"/>
+        </scene>
+        <!--Countdown Seconds Table View Controller-->
+        <scene sceneID="QYl-EQ-Xqb">
+            <objects>
+                <tableViewController storyboardIdentifier="CountdownSecondsVC" id="JCi-UR-cjo" customClass="CountdownSecondsTableViewController" customModule="Magnetometer" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="wxL-0p-dog">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="SecondsCell" id="oPG-WA-yFe">
+                                <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="oPG-WA-yFe" id="IAK-MI-KI2">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="JCi-UR-cjo" id="19B-fE-0Cj"/>
+                            <outlet property="delegate" destination="JCi-UR-cjo" id="11K-En-Xqn"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vh5-et-C9t" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2386" y="116"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="S58-mF-cpO">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="3pA-g0-WtR" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="bGt-cM-m2M">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="hck-PH-Yhh"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vZo-TW-06N" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="28" y="116"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
