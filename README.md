@@ -1,3 +1,11 @@
 # Magnetometer
 
-尚未完成。
+未完成。
+
+
+## Screenshot
+
+![Screenshot](imgs/001.png)
+
+
+
